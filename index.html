@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Movie Explorer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>🎬 Movie Explorer</h1>
+
+  <input type="text" id="searchInput" placeholder="Search movies...">
+  <button onclick="searchMovies()">Search</button>
+
+  
+  <select id="genreSelect" onchange="applyFilters()">
+    <option value="">All Genres</option>
+  </select>
+  
+  <select id="languageSelect" onchange="applyFilters()">
+    <option value="">All Languages</option>
+  </select>
+</header>
+
+<div id="movies" class="movie-container"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
